@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXScrollPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControladorCategoria">
+   <top>
+      <AnchorPane prefHeight="67.0" prefWidth="500.0" style="-fx-background-color: #e8e8e8;" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="14.0" layoutY="8.0" onAction="#irAtras" prefHeight="44.0" prefWidth="42.0" ripplerFill="#ffff23" styleClass="btn" stylesheets="@application.css">
+               <graphic>
+                  <ImageView fx:id="btnCancelar" fitHeight="45.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_left_arrow_64px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Label layoutX="252.0" layoutY="22.0" text="FUNCIONES TEATRALES">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="572.0" layoutY="9.0" text="Ayuda: 986052009">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <JFXScrollPane BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #e1e168;">
+               <children>
+                  <AnchorPane prefHeight="150.0" prefWidth="473.0">
+                     <children>
+                        <ImageView fitHeight="127.0" fitWidth="122.0" layoutX="14.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/spectacle_vidasueno.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="171.0" layoutY="8.0" text="La vida es sueño">
+                           <font>
+                              <Font name="Comic Sans MS" size="25.0" />
+                           </font>
+                        </Label>
+                        <Text layoutX="171.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="¿Qué es la vida? Un frenesí. ¿Qué es la vida? Una ilusión, una sombra, una ficción; y el mayor bien es pequeño; que toda la vida es sueño, y los sueños, sueños son." textAlignment="JUSTIFY" wrappingWidth="400.2289733886719">
+                           <font>
+                              <Font name="Comic Sans MS" size="18.0" />
+                           </font></Text>
+                        <AnchorPane layoutX="-211.0" layoutY="-185.0" prefHeight="200.0" prefWidth="200.0" />
+                     </children>
+                  </AnchorPane>
+                  <JFXButton fx:id="btnFunciones" buttonType="RAISED" contentDisplay="TOP" layoutX="626.0" layoutY="47.0" onAction="#pressBtnTeatro" prefHeight="57.0" prefWidth="79.0" ripplerFill="#ffff23" styleClass="btn" stylesheets="@application.css" text="VER">
+                     <font>
+                        <Font name="Times New Roman Bold" size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <AnchorPane layoutY="142.0" prefHeight="150.0" prefWidth="473.0">
+                     <children>
+                        <ImageView fitHeight="127.0" fitWidth="122.0" layoutX="14.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/spectacle_carpediem.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="171.0" layoutY="19.0" text="Carpe Diem">
+                           <font>
+                              <Font name="Comic Sans MS" size="25.0" />
+                           </font>
+                        </Label>
+                        <Text layoutX="171.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="En esta obra teatral, los protagonistas vivirán un sinfín de sentimientos que los llevarán a realizar sus máas oscuros deseos." textAlignment="JUSTIFY" wrappingWidth="400.2289733886719">
+                           <font>
+                              <Font name="Comic Sans MS" size="18.0" />
+                           </font>
+                        </Text>
+                        <AnchorPane layoutX="-211.0" layoutY="-185.0" prefHeight="200.0" prefWidth="200.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutY="283.0" prefHeight="150.0" prefWidth="473.0">
+                     <children>
+                        <ImageView fitHeight="127.0" fitWidth="122.0" layoutX="14.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/spectacles_gafassol.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="171.0" layoutY="19.0" text="Os turistas levan gafas de sol">
+                           <font>
+                              <Font name="Comic Sans MS" size="25.0" />
+                           </font>
+                        </Label>
+                        <Text layoutX="171.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="En este obra, el público se pondrá en la piel de los turistas, acercándose a diferentes culturas y tradiciones." textAlignment="JUSTIFY" wrappingWidth="400.2289733886719">
+                           <font>
+                              <Font name="Comic Sans MS" size="18.0" />
+                           </font>
+                        </Text>
+                        <AnchorPane layoutX="-211.0" layoutY="-185.0" prefHeight="200.0" prefWidth="200.0" />
+                     </children>
+                  </AnchorPane>
+                  <JFXButton fx:id="btnFunciones1" buttonType="RAISED" contentDisplay="TOP" layoutX="626.0" layoutY="330.0" onAction="#abrirError" prefHeight="57.0" prefWidth="79.0" ripplerFill="#ffff23" styleClass="btn" stylesheets="@application.css" text="VER">
+                     <font>
+                        <Font name="Times New Roman Bold" size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnFunciones2" buttonType="RAISED" contentDisplay="TOP" layoutX="626.0" layoutY="188.0" onAction="#abrirError" prefHeight="57.0" prefWidth="79.0" ripplerFill="#ffff23" styleClass="btn" stylesheets="@application.css" text="VER">
+                     <font>
+                        <Font name="Times New Roman Bold" size="18.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </children>
+      </JFXScrollPane>
+   </center>
+</BorderPane>

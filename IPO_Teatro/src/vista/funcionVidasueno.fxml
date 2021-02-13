@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControladorFunciones">
+   <top>
+      <AnchorPane prefHeight="67.0" prefWidth="500.0" style="-fx-background-color: #e8e8e8;" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="14.0" layoutY="8.0" onAction="#irAtras" prefHeight="44.0" prefWidth="42.0" ripplerFill="#ffff23" styleClass="btn" stylesheets="@application.css">
+               <graphic>
+                  <ImageView fx:id="btnCancelar" fitHeight="45.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_left_arrow_64px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Label fx:id="encabezado" layoutX="265.0" layoutY="23.0" text="FUNCIONES TEATRALES">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="575.0" layoutY="10.0" text="Ayuda: 986052009">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="750.0" prefWidth="500.0" style="-fx-background-color: #e8e8e8;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="49.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/spectacle_vidasueno.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="242.0" layoutY="59.0" text="La Vida es Sueño">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="24.0" />
+               </font>
+            </Label>
+            <Text layoutX="242.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="24 de Noviembre">
+               <font>
+                  <Font name="Comic Sans MS" size="18.0" />
+               </font>
+            </Text>
+            <Label layoutX="48.0" layoutY="221.0" text="Sinopsis">
+               <font>
+                  <Font name="Comic Sans MS" size="24.0" />
+               </font>
+            </Label>
+            <JFXTextArea layoutX="51.0" layoutY="269.0" prefHeight="124.0" prefWidth="655.0" text="La Polonia que aparece en la obra es un mundo opresivo, cerrado, claustrofóbico al que vemos un paralelismo en determinados ámbitos contemporáneos urbanos, con sus propias leyes internas, donde la violencia se expresa en reglas de poder estrictas. Los ocho intérpretes, siete actores y un músico que están permanentemente en escena, van a crear ese mundo casi penitenciario, donde la pertenencia o no al grupo marca la posibilidad misma de la existencia.">
+               <font>
+                  <Font name="Comic Sans MS" size="18.0" />
+               </font>
+            </JFXTextArea>
+            <JFXButton fx:id="btnCompra" buttonType="RAISED" contentDisplay="TOP" layoutX="551.0" layoutY="46.0" onAction="#pulsarBtnCompraVidasueno" prefHeight="97.0" prefWidth="147.0" ripplerFill="#ffff23" styleClass="btn" stylesheets="@application.css" text="COMPRAR">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <Text fill="RED" layoutX="553.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quedan 9 entradas">
+               <font>
+                  <Font name="Consolas Italic" size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

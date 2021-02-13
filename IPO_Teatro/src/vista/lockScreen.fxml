@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane alignment="center" hgap="10" prefHeight="500.0" prefWidth="750.0" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControladorBloqueo">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Pane minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#pressScreen" prefHeight="499.0" prefWidth="747.0" style="-fx-background-color: #e8e8e8;">
+         <children>
+            <AnchorPane layoutX="106.0" layoutY="263.0" prefHeight="101.0" prefWidth="260.0" style="-fx-border-width: 2px; -fx-border-color: #000; -fx-background-color: #eded96;">
+               <children>
+                  <Text layoutX="14.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="La vida es sueño" wrappingWidth="154.6484375">
+                     <font>
+                        <Font name="Comic Sans MS" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="14.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Con la compañía teatral &quot;Vive la vida&quot;." wrappingWidth="122.34375">
+                     <font>
+                        <Font name="Comic Sans MS" size="12.0" />
+                     </font></Text>
+                  <Text layoutX="196.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="24">
+                     <font>
+                        <Font size="44.0" />
+                     </font>
+                  </Text>
+                  <Label layoutX="215.0" layoutY="72.0" text="9">
+                     <font>
+                        <Font name="Comic Sans MS" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </AnchorPane>
+            <AnchorPane layoutX="384.0" layoutY="263.0" prefHeight="101.0" prefWidth="260.0" style="-fx-border-width: 2px; -fx-border-color: #000; -fx-background-color: #a1f490;">
+               <children>
+                  <Text layoutX="14.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Xuncos" wrappingWidth="154.6484375">
+                     <font>
+                        <Font name="Comic Sans MS" size="20.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="14.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="El coro de este instituto nos deleitará con sus canciones." wrappingWidth="161.314453125">
+                     <font>
+                        <Font name="Comic Sans MS" size="12.0" />
+                     </font></Text>
+                  <Text layoutX="196.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="13">
+                     <font>
+                        <Font size="44.0" />
+                     </font>
+                  </Text>
+                  <Label layoutX="215.0" layoutY="70.0" prefHeight="21.0" prefWidth="17.0" text="7">
+                     <font>
+                        <Font name="Comic Sans MS" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </AnchorPane>
+            <ImageView fitHeight="108.0" fitWidth="110.0" layoutX="320.0" layoutY="55.0">
+               <image>
+                  <Image url="@../images/logo.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="95.0" layoutY="179.0" text="TEATRO PRINCIPAL DE PONTEVEDRA">
+               <font>
+                  <Font name="Comic Sans MS" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="223.0" layoutY="428.0" text="Toca la pantalla para comenzar">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="560.0" layoutY="19.0" text="Ayuda: 986052009">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</GridPane>

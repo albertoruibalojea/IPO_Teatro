@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControladorFin">
+   <top>
+      <AnchorPane prefHeight="67.0" prefWidth="500.0" style="-fx-background-color: #e8e8e8;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="182.0" layoutY="26.0" text="COMPRA REALIZADA CORRECTAMENTE">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="574.0" layoutY="10.0" text="Ayuda: 986052009">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane fx:id="panel" onMouseClicked="#salir" prefHeight="433.0" prefWidth="750.0" style="-fx-background-color: #e8e8e8;" BorderPane.alignment="CENTER">
+         <children>
+            <Text layoutX="216.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Esperamos que disfrutes del espectáculo." textAlignment="CENTER">
+               <font>
+                  <Font name="Comic Sans MS" size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="entradas" layoutX="185.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="recoger entradas" textAlignment="CENTER" wrappingWidth="407.8349609375">
+               <font>
+                  <Font name="Comic Sans MS" size="18.0" />
+               </font>
+            </Text>
+            <Label layoutX="136.0" layoutY="146.0" text="TEATRO PRINCIPAL DE PONTEVEDRA">
+               <font>
+                  <Font name="Comic Sans MS" size="25.0" />
+               </font>
+            </Label>
+            <Text layoutX="261.0" layoutY="395.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Toca la pantalla para salir" textAlignment="CENTER">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="20.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="120.0" fitWidth="116.0" layoutX="331.0" layoutY="19.0">
+               <image>
+                  <Image url="@../images/logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>

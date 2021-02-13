@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControladorFunciones">
+   <top>
+      <AnchorPane prefHeight="67.0" prefWidth="500.0" style="-fx-background-color: #e8e8e8;" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="14.0" layoutY="8.0" onAction="#irAtras" prefHeight="44.0" prefWidth="42.0" ripplerFill="#a826ff" styleClass="btn" stylesheets="@application.css">
+               <graphic>
+                  <ImageView fx:id="btnCancelar" fitHeight="45.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_left_arrow_64px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Label fx:id="encabezado" layoutX="261.0" layoutY="22.0" text="FUNCIONES MUSICALES">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="575.0" layoutY="9.0" text="Ayuda: 986052009">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="750.0" prefWidth="500.0" style="-fx-background-color: #e8e8e8;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="49.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/music_xuncos.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="242.0" layoutY="59.0" text="Xuncos">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="24.0" />
+               </font>
+            </Label>
+            <Text layoutX="242.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="13 de Diciembre">
+               <font>
+                  <Font name="Comic Sans MS" size="18.0" />
+               </font>
+            </Text>
+            <Label layoutX="48.0" layoutY="221.0" text="Sinopsis">
+               <font>
+                  <Font name="Comic Sans MS" size="24.0" />
+               </font>
+            </Label>
+            <JFXTextArea layoutX="51.0" layoutY="269.0" prefHeight="124.0" prefWidth="655.0" text="La Música puede ser una asignatura que simplemente cumpla la programación, o puede ser una actividad educativa y lúdica que trascende de la propia asignatura, e involucra a todo un centro escolar, mucho más allá de los alumnos y profes que la estudian y la imparten. En nuestro instituto optamos por el segundo camino, y aquí está el resultado: tocamos y cantamos, e implicamos a cientos de estudiantes. Montamos una orquesta y un coro que fue creciendo y madurando. Comenzamos con conciertos navideños en el instituto, seguimos con actuaciones en otros centros, Teatro Principal, Auditorio,..., grabamos un disco instrumental y otro instrumental y coral. ¿El futuro? Seguir haciendo que nuestros alumnos toquen y canten música y, por supuesto, que se diviertan haciéndolo y se motiven al ver que lo hacen bien.">
+               <font>
+                  <Font name="Comic Sans MS" size="18.0" />
+               </font>
+            </JFXTextArea>
+            <JFXButton fx:id="btnCompra" buttonType="RAISED" contentDisplay="TOP" layoutX="551.0" layoutY="46.0" onAction="#pulsarBtnCompraXuncos" prefHeight="97.0" prefWidth="147.0" ripplerFill="#a826ff" styleClass="btn" stylesheets="@application.css" text="COMPRAR">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <Text fill="RED" layoutX="553.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quedan 7 entradas">
+               <font>
+                  <Font name="Consolas Italic" size="16.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

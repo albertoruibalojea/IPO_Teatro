@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControladorPago">
+   <top>
+      <AnchorPane prefHeight="67.0" prefWidth="500.0" style="-fx-background-color: #e8e8e8;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="349.0" layoutY="24.0" text="PAGO">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="572.0" layoutY="11.0" text="Ayuda: 986052009">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane prefHeight="433.0" prefWidth="750.0" style="-fx-background-color: #e8e8e8;" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="titulo" layoutX="16.0" layoutY="13.0" text="La Vida es Sueño">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="24.0" />
+               </font>
+            </Label>
+            <Text fx:id="fecha" layoutX="16.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="24 de Noviembre">
+               <font>
+                  <Font name="Comic Sans MS" size="18.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="btnFinalizar" buttonType="RAISED" contentDisplay="TOP" layoutX="602.0" layoutY="333.0" onAction="#finalizar" prefHeight="85.0" prefWidth="132.0" ripplerFill="#84ea97" styleClass="btn" stylesheets="@application.css" text="FINALIZAR">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <Text layoutX="312.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pago de entradas" textAlignment="CENTER">
+               <font>
+                  <Font name="Comic Sans MS" size="18.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="btnCancelar" buttonType="RAISED" contentDisplay="TOP" layoutX="18.0" layoutY="333.0" onAction="#cancelar" prefHeight="85.0" prefWidth="132.0" ripplerFill="#ff8484" styleClass="btn" stylesheets="@application.css" text="CANCELAR">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <Text fx:id="precio" layoutX="326.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="RIGHT" wrappingWidth="52.59222412109375">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="25.0" />
+               </font>
+            </Text>
+            <Text layoutX="390.0" layoutY="109.0" strokeType="OUTSIDE" strokeWidth="0.0" text="€" wrappingWidth="23.2589111328125">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="25.0" />
+               </font>
+            </Text>
+            <Text fx:id="labelPago" layoutX="200.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="holaholaholaholahola" textAlignment="CENTER" wrappingWidth="356.0244140625">
+               <font>
+                  <Font name="Comic Sans MS" size="18.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="btnAtras" buttonType="RAISED" contentDisplay="TOP" layoutX="175.0" layoutY="334.0" onAction="#irAtras" prefHeight="85.0" prefWidth="132.0" ripplerFill="#80c5ff" styleClass="btn" stylesheets="@application.css" text="ATRÁS">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXSpinner layoutX="360.0" layoutY="240.0" />
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>
