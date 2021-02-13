@@ -1,0 +1,10 @@
+Label {
+    -fx-border-style: solid 2px;
+    -fx-border-color: #000;
+    -fx-background-color: #a9a9a9;
+    -fx-pref-width: 30px;
+    -fx-pref-height: 30px;
+    -fx-alignment: center;
+    -fx-font-style: Comic Sans MS;
+    -fx-font-size: 14px;
+}
